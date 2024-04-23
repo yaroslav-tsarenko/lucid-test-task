@@ -1,0 +1,261 @@
+.formulas-container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 950px;
+    border: 1px solid #afafaf;
+}
+
+.formulas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.formulas-header section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.formulas-header button {
+    background: #3d7dff;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+    width: 24px;
+    height: 24px;
+    transition: 0.2s ease-in-out;
+}
+
+.formulas-header button:hover {
+    background: #2b5fd7;
+    transition: 0.2s ease-in-out;
+}
+
+.formula-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    border: 2px solid #edf0f2;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.formula-container-header-upper {
+    display: flex;
+    justify-content: space-between;
+    background: #e5e7ea;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.formula-container-header-upper section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.formula-container-header-upper section h4 {
+    font-weight: normal;
+    margin: 0;
+}
+
+.formula-container-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 0 10px 0 10px;
+    background: #f6f8fa;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tooltip {
+    position: absolute;
+    top: -10px;
+    display: flex;
+    background-color: #f6f8fa;
+    color: #fff;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    left: 70%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.popup{
+    position: absolute;
+    top: -20px;
+    display: flex;
+    background-color: #f6f8fa;
+    color: #fff;
+    height: 30px;
+    width: 150px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    left: 90%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.popup button{
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+    font-size: 1rem;
+
+}
+
+.tooltip input {
+    border: 1px solid #d1d8e0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.tooltip button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #595959;
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+.tooltip input {
+    background: white;
+}
+
+.formula-container-header-inner button {
+    background: #e9ecf0;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #1e1f1f;
+    padding: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.formula-container-content {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.autocomplete-suggestions {
+    position: absolute;
+    border: 1px solid #d9dbde;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    top: 200px;
+    width: 300px;
+    height: 400px;
+    overflow: scroll;
+    z-index: 999;
+}
+
+.autocomplete-suggestions div {
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+    display: flex;
+    margin: 5px;
+}
+
+.autocomplete-suggestions div:hover {
+    background: #f6f8fa;
+}
+
+.formula-container-content input {
+    border: 1px solid #d9dbde;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 1.3rem;
+    padding: 5px;
+    margin: 5px;
+    outline: none;
+}
+
+.formula-container-content button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 7px;
+    align-items: center;
+    color: #3d7dff;
+    transition: 0.1s ease-in-out;
+}
+
+.formula-container-content button:hover {
+    color: #0051ff;
+    transition: 0.1s ease-in-out;
+}
+
+.formulas-container-content {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.nav-icon-arrow {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    color: #627491;
+    border-radius: 4px;
+    padding: 2px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-icon-arrow.rotated {
+    transform: rotate(90deg);
+}
+
+.nav-icon-arrow:hover {
+    transition: 0.2s ease-in-out;
+    color: #415372;
+}
+
+.nav-icon {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    color: #919daf;
+    border-radius: 4px;
+    padding: 2px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-icon:hover {
+    transition: 0.2s ease-in-out;
+    color: #001133;
+    background: #d9dbde;
+}
+
